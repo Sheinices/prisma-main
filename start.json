@@ -1,0 +1,21 @@
+{
+  "name": "Prisma.TV",
+  "type": "list",
+  "headline": "Prisma TV",
+  "version": "1.0.0",
+  "parameter": "content:http://prisma.ws/msx/start.json",
+  "action": "[settings:validate_links:0|home]",
+  "dictionary": "http://prisma.ws/msx/lang/ru.json",
+   "template": {
+        "type": "separate",
+      "layout": "0,0,2,3",
+      "color": "msx-glass"
+   },
+   "items": [
+      {
+         "title":"Prisma",
+         "image": "http://prisma.ws/msx-logo.png",
+         "action": "link:http://prisma.ws/index.html"
+      }
+   ]
+}

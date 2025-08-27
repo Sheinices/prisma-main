@@ -1,0 +1,35 @@
+{
+  "name": "Prisma.TV",
+  "headline": "Prisma MSX",
+  "extension": "Версия MSX: 1.0.0",
+  "version": "1.0.0",
+  "parameter": "content:http://prisma.ws/msx/start.json",
+  "note": "For this service, Media Station X 0.1.120 or higher is needed",
+  "action": "[settings:validate_links:0|home]",
+  "dictionary": "http://prisma.ws/msx/lang/ru.json",
+  "pages": [
+    {
+      "items": [
+        {
+          "id": "description",
+          "type": "space",
+          "layout": "5,0,5,5",
+          "text": ""
+        },
+        {
+          "type": "control",
+          "layout": "0,0,5,1",
+          "image": "http://prisma.ws/msx-logo.png",
+          "label": "Prisma",
+          "action": "link:http://prisma.ws/index.html",
+          "selection": {
+            "important": true,
+            "action": "update:content:description",
+            "data": {
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
